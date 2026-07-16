@@ -32,4 +32,25 @@
 => Everything else is found either in the uploaded config files or will be written down below
 
 3. i3 / debian configuration
+-> `apt install git`
+--> `git config --global --edit`
+---> Name: Nico, Email: nico@sinkpad.local
+-> `apt install gh` (Github Client)
+
+-> In root folder `git clone <this repo>`
+-> I move every config file to this folder or if already happend i delete them
+-> I create a link for every moved config file 
+`ln -s ~/Debian-i3-Setup/Configs/i3 ~/.config/i3`
+
+
+
+
+
+4. Software installation
+-> `apt install firefox-esr`
+
+-> Bitwarden: download deb from website
+-> `apt install ./bitwarden.deb`
+
+
 
