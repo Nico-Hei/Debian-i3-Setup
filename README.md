@@ -1,56 +1,58 @@
 # Debian-i3-Setup
-1. Debian installation
--> Debian 13.05.0
--> Language: English
--> Location: Europe, Germany
--> Language Settings: US
--> Keymap: German
+## 1. Debian installation
+	-> Debian 13.05.0
+	-> Language: English
+	-> Location: Europe, Germany
+	-> Language Settings: US
+	-> Keymap: German
 
--> Hostname: Sinkpad 😂
--> Host Domain: speedport.ip (My Homerouters local domain)
--> Leave root password empty so the initial admin privileges will go to my own user
+	-> Hostname: Sinkpad 😂
+	-> Host Domain: speedport.ip (My Homerouters local domain)
+	-> Leave root password empty so the initial admin privileges will go to my own user
 
--> As I use debian besides my windows school installation i will manually partition my ssd.
---> Seperate /home partition
+	-> As I use debian besides my windows school installation i will manually partition my ssd.
+		-> Seperate /home partition
 
--> German mirror
---> deb.debian.org
+	-> German mirror
+		-> deb.debian.org
 
--> No desktop environment
--> standard system utilities
+	-> No desktop environment
+	-> Standard system utilities
 
-2. i3 installation
--> X-Server installation (Handles Video, Mouse, Keyboard stuff)
-`apt install xorg`
+## 2. i3 installation
+	-> X-Server installation (Handles Video, Mouse, Keyboard stuff)
+		`apt install xorg`
 
--> i3-Server installation(requires a X-Server)
-`apt install i3`
+	-> i3-Server installation(requires a X-Server)
+		`apt install i3`
 
--> display manager installation (to automatically start xorg and to show a visual login screen)
-`apt install lightdm`
+	-> display manager installation (to automatically start xorg and to show a visual login screen)
+		`apt install lightdm`
 
 => Everything else is found either in the uploaded config files or will be written down below
 
-3. i3 / debian configuration
--> `apt install git`
---> `git config --global --edit`
----> Name: Nico, Email: nico@sinkpad.local
--> `apt install gh` (Github Client)
+## 3. i3 / debian configuration
+	-> `apt install git`
+		-> `git config --global --edit`
+			-> Name: Nico, Email: nico@sinkpad.local
+	-> `apt install gh` (Github Client)
 
--> In root folder `git clone <this repo>`
--> I move every config file to this folder or if already happend i delete them
--> I create a link for every moved config file 
-`ln -s ~/Debian-i3-Setup/Configs/i3 ~/.config/i3`
+	-> In root folder `git clone <this repo>`
+	-> I move every config file to this folder or if already happend i delete them
+	-> I create a link for every moved config file 
+		`ln -s ~/Debian-i3-Setup/Configs/i3 ~/.config/i3`
+
+### Change Wallpaper
+	-> `apt install nitrogen`
+		-> Add wallpaper folder ~/Pictures/Wallpapers
 
 
+## 4. Software installation
+	-> `apt install firefox-esr`
 
+	-> Bitwarden: download deb from website
+		-> `apt install ./bitwarden.deb`
 
-
-4. Software installation
--> `apt install firefox-esr`
-
--> Bitwarden: download deb from website
--> `apt install ./bitwarden.deb`
-
+	-> Terminal: `apt install alacritty`
 
 
