@@ -20,5 +20,16 @@
 -> standard system utilities
 
 2. i3 installation
--> 
+-> X-Server installation (Handles Video, Mouse, Keyboard stuff)
+`apt install xorg`
+
+-> i3-Server installation(requires a X-Server)
+`apt install i3`
+
+-> display manager installation (to automatically start xorg and to show a visual login screen)
+`apt install lightdm`
+
+=> Everything else is found either in the uploaded config files or will be written down below
+
+3. i3 / debian configuration
 
