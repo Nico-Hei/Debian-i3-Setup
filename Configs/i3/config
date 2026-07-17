@@ -55,7 +55,7 @@ tiling_drag modifier titlebar
 #bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -202,3 +202,15 @@ bindsym $mod+B exec firefox
 
 # wallpaper
 exec --no-startup-id nitrogen --restore
+
+# monitor configs
+exec --no-startup-id ~/Debian-i3-Setup/Scripts/Monitors.sh
+
+# program launcher 
+bindsym $mod+D exec --no-startup-id rofi -show drun
+
+# colors
+client.focused          #569CD6 #569CD6 #FFFFFF #569CD6 #569CD6
+client.focused_inactive #252526 #252526 #D4D4D4 #252526 #252526
+client.unfocused        #1E1E1E #1E1E1E #D4D4D4 #1E1E1E #1E1E1E
+client.urgent           #569CD6 #569CD6 #FFFFFF #569CD6 #569CD6

@@ -1,2 +1,29 @@
+[window]
+opacity = 0.95
+
 [font]
-size = 10
+size = 10.0
+
+[colors.primary]
+background = "#1E1E1E"
+foreground = "#D4D4D4"
+
+[colors.normal]
+black   = "#1E1E1E"
+red     = "#D4D4D4"
+green   = "#D4D4D4"
+yellow  = "#D4D4D4"
+blue    = "#569CD6"
+magenta = "#D4D4D4"
+cyan    = "#D4D4D4"
+white   = "#D4D4D4"
+
+[colors.bright]
+black   = "#404040"
+red     = "#FFFFFF"
+green   = "#FFFFFF"
+yellow  = "#FFFFFF"
+blue    = "#7FB7E8"
+magenta = "#FFFFFF"
+cyan    = "#FFFFFF"
+white   = "#FFFFFF"
