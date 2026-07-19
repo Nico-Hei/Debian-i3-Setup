@@ -42,7 +42,9 @@
 	-> I create a link for every moved config file 
 		`ln -s ~/Debian-i3-Setup/Configs/i3 ~/.config/i3`
 
-		`ln -s ~/Debian-i3-Setup/Configs/Rofi ~/.config/rofi`
+### i3 Status Bar setup
+	1. `mkdir ~/.config/i3status`
+	2. `ln -s ~/Debian-i3-Setup/Configs/i3status/* ~/.config/i3status/`
 
 ### Change Wallpaper
 	-> `apt install nitrogen`

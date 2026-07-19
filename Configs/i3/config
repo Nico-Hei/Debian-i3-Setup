@@ -203,8 +203,8 @@ bindsym $mod+B exec firefox
 # wallpaper
 exec --no-startup-id nitrogen --restore
 
-# monitor configs
-exec --no-startup-id ~/Debian-i3-Setup/Scripts/Monitors.sh
+# display configs
+exec --no-startup-id ~/Debian-i3-Setup/Scripts/ScreenLayout.sh
 
 # program launcher 
 bindsym $mod+d exec --no-startup-id rofi -show drun -theme /usr/share/rofi/themes/rounded-gray-dark.rasi
