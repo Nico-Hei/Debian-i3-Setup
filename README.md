@@ -53,7 +53,7 @@
 
 	#### STEP 1:
 		1.1 `apt install pipewire-audio wireplumber`
-		1.2 `systemctl --user enable --now pipewire wireplumber
+		1.2 `systemctl --user enable --now pipewire wireplumber`
 		1.3 `apt install firmware-sof-signed firmware-linux-nonfree` (Intel audio drivers)
 	
 	### STEP 2:
@@ -65,6 +65,7 @@
 		2.2.4 Select auto-mute and disable it
 		2.2.5 Press escape to exit
 
+	1--- Maybe not required anymore, audio setup is work in progress rn
 	### STEP 3 ("No I dont want to disable my speakers when also using headphone jack!"):
 		3.1 `mkdir -p ~/.config/wireplumber/wireplumber.conf.d/`
 		3.2 `ln -s ~/Debian-i3-Setup/Configs/Wireplumber/99-ignore-jack.conf ~/.config/wireplumber/wireplumber.conf.d/`
@@ -76,28 +77,40 @@
 		3.3.5 Click "Apply now" then "Install boot override"
 		---
 		3.4 `systemctl --user restart pipewire wireplumber`
+	1---
 
 	### STEP 4:
 		4.1 `apt install pavucontrol`
 		4.1.1 Click on "Configuration" 
 		4.1.2 Set "Built-in Audio" to "Pro Audio"
 
-
-
+---
 
 ## 4. Software installation
-	-> `apt install firefox-esr`
+	- Browser(Firefox): `apt install firefox-esr`
 
-	-> Bitwarden: download deb from website
-		-> `apt install ./bitwarden.deb`
+	- Password Manager(Bitwarden): 
+		1 `wget -O bitwarden.deb "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bitwarden.com/download/%3Fapp%3Ddesktop%26platform%3Dlinux%26variant%3Ddeb&ved=2ahUKEwjaxsq2t92VAxVkQvEDHd_RH18QFnoECA4QAQ&usg=AOvVaw3xLFvdu0SraodYpFH40PxU"`
+		2 `apt install ./bitwarden.deb`
 
-	-> Terminal: `apt install alacritty`
+	- Terminal(Alacritty): `apt install alacritty`
 
-	-> Monitor Software: `apt install arandr`
+	- Displaymanager(Arandr): `apt install arandr`
 
-	-> Filemanager: `Thunar`
+	- Filemanager(Thunar): `apt install thunar`
 
-	-> Program Launcher: `apt install rofi`
+	- Programlauncher(Rofi): `apt install rofi`
 
-	-> Visual Studio(Code & Default Text Editor): download deb from vs code website
-		-> `apt install ./code.deb`
+	- Visual Studio(Code & Default Text Editor): 
+		1 `wget -O vs_code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"`
+		2 `apt install ./vs_code.deb`
+
+	- VeraCrypt(To access my encrypted devices): download deb from veracrypt website
+		1 `wget -O veracrypt.deb "https://launchpad.net/veracrypt/trunk/1.26.29/+download/veracrypt-1.26.29-Debian-13-amd64.deb"`
+		2 `apt install ./veracrypt.deb`
+	
+	
+	### All in one (Use in Downloads folder)
+	`wget -O vs_code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" && wget -O veracrypt.deb "https://launchpad.net/veracrypt/trunk/1.26.29/+download/veracrypt-1.26.29-Debian-13-amd64.deb" && wget -O bitwarden.deb "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bitwarden.com/download/%3Fapp%3Ddesktop%26platform%3Dlinux%26variant%3Ddeb&ved=2ahUKEwjaxsq2t92VAxVkQvEDHd_RH18QFnoECA4QAQ&usg=AOvVaw3xLFvdu0SraodYpFH40PxU" && sudo apt install -y firefox-esr alacritty arandr thunar rofi ./vs_code.deb ./veracrypt.deb ./bitwarden.deb`
+
+---

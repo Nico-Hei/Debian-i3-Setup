@@ -208,9 +208,3 @@ exec --no-startup-id ~/Debian-i3-Setup/Scripts/Monitors.sh
 
 # program launcher 
 bindsym $mod+D exec --no-startup-id rofi -show drun
-
-# colors
-client.focused          #569CD6 #569CD6 #FFFFFF #569CD6 #569CD6
-client.focused_inactive #252526 #252526 #D4D4D4 #252526 #252526
-client.unfocused        #1E1E1E #1E1E1E #D4D4D4 #1E1E1E #1E1E1E
-client.urgent           #569CD6 #569CD6 #FFFFFF #569CD6 #569CD6
