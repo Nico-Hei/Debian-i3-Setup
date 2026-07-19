@@ -1,8 +1,0 @@
-* {
-    bg:      #1E1E1E;
-    bg-alt:  #252526;
-    fg:      #D4D4D4;
-    accent:  #569CD6;
-}
-
-@theme "/usr/share/rofi/themes/DarkBlue.rasi"

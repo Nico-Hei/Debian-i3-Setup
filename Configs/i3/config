@@ -207,4 +207,4 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id ~/Debian-i3-Setup/Scripts/Monitors.sh
 
 # program launcher 
-bindsym $mod+D exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme /usr/share/rofi/themes/rounded-gray-dark.rasi

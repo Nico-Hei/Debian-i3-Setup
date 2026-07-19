@@ -41,12 +41,15 @@
 	-> I move every config file to this folder or if already happend i delete them
 	-> I create a link for every moved config file 
 		`ln -s ~/Debian-i3-Setup/Configs/i3 ~/.config/i3`
-		`ln -s ~/Debian-i3-Setup/Configs/Alacritty ~/.config/alacritty`
+
 		`ln -s ~/Debian-i3-Setup/Configs/Rofi ~/.config/rofi`
 
 ### Change Wallpaper
 	-> `apt install nitrogen`
 		-> Add wallpaper folder ~/Pictures/Wallpapers
+
+### Display setup
+
 
 ### Audio setup (The most anoying thing in existens)
 	I use 1 monitor with audio via hdmi/dp, my internal laptop speakers, my jack hadphones, and sometimes a bluetooth speaker.
@@ -94,23 +97,30 @@
 		2 `apt install ./bitwarden.deb`
 
 	- Terminal(Alacritty): `apt install alacritty`
+		-> New themes(Currently in use is "linux"): https://github.com/alacritty/alacritty-theme
+		1 `mkdir ~/.config/alacritty`
+		2 `ln -s ~/Debian-i3-Setup/Configs/Alacritty/* ~/.config/alacritty/`
 
 	- Displaymanager(Arandr): `apt install arandr`
 
 	- Filemanager(Thunar): `apt install thunar`
 
 	- Programlauncher(Rofi): `apt install rofi`
+		-> New themes(Currently in use rounded-gray-dark): https://github.com/newmanls/rofi-themes-collection/tree/master
+		1 `mkdir /usr/share/rofi/themes`
+		2 `sudo ln -s ~/Debian-i3-Setup/Configs/Rofi/Themes/* /usr/share/rofi/themes/`
 
-	- Visual Studio(Code & Default Text Editor): 
+	- Code & Default Text Editor(Visual Studio): 
 		1 `wget -O vs_code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"`
 		2 `apt install ./vs_code.deb`
 
-	- VeraCrypt(To access my encrypted devices): download deb from veracrypt website
+	- Encryption(VeraCrypt(To access my encrypted devices)): download deb from veracrypt website
 		1 `wget -O veracrypt.deb "https://launchpad.net/veracrypt/trunk/1.26.29/+download/veracrypt-1.26.29-Debian-13-amd64.deb"`
 		2 `apt install ./veracrypt.deb`
 	
+	- Hardwaremonitor(HTOP): `apt install htop`
 	
 	### All in one (Use in Downloads folder)
-	`wget -O vs_code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" && wget -O veracrypt.deb "https://launchpad.net/veracrypt/trunk/1.26.29/+download/veracrypt-1.26.29-Debian-13-amd64.deb" && wget -O bitwarden.deb "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bitwarden.com/download/%3Fapp%3Ddesktop%26platform%3Dlinux%26variant%3Ddeb&ved=2ahUKEwjaxsq2t92VAxVkQvEDHd_RH18QFnoECA4QAQ&usg=AOvVaw3xLFvdu0SraodYpFH40PxU" && sudo apt install -y firefox-esr alacritty arandr thunar rofi ./vs_code.deb ./veracrypt.deb ./bitwarden.deb`
+	`wget -O vs_code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" && wget -O veracrypt.deb "https://launchpad.net/veracrypt/trunk/1.26.29/+download/veracrypt-1.26.29-Debian-13-amd64.deb" && wget -O bitwarden.deb "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bitwarden.com/download/%3Fapp%3Ddesktop%26platform%3Dlinux%26variant%3Ddeb&ved=2ahUKEwjaxsq2t92VAxVkQvEDHd_RH18QFnoECA4QAQ&usg=AOvVaw3xLFvdu0SraodYpFH40PxU" && sudo apt install -y firefox-esr alacritty arandr thunar rofi ./vs_code.deb ./veracrypt.deb ./bitwarden.deb htop`
 
 ---
