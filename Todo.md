@@ -1,0 +1,2 @@
+- Eye comfort mode
+- 120(/165)HZ not available for ext. monitor

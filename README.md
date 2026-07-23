@@ -32,26 +32,31 @@
 => Everything else is found either in the uploaded config files or will be written down below
 
 ## 3. i3 / debian configuration
-	-> `apt install git`
-		-> `git config --global --edit`
-			-> Name: Nico, Email: nico@sinkpad.local
-	-> `apt install gh` (Github Client)
 
-	-> In root folder `git clone <this repo>`
-	-> I move every config file to this folder or if already happend i delete them
-	-> I create a link for every moved config file 
-		`ln -s ~/Debian-i3-Setup/Configs/i3 ~/.config/i3`
+### Git setup
+	1 `apt install git`
+	2 `git config --global --edit`
+		-> Name: Nico, Email: nico@sinkpad.local
+	3 `apt install gh` (Github Client)
+		-> Login with Github
+	4 In root folder: `git clone <this repo>`
+	5 `ln -s ~/Debian-i3-Setup/Configs/i3 ~/.config/i3`
 
 ### i3 Status Bar setup
-	1. `mkdir ~/.config/i3status`
-	2. `ln -s ~/Debian-i3-Setup/Configs/i3status/* ~/.config/i3status/`
+	1 `mkdir ~/.config/i3status`
+	2 `ln -s ~/Debian-i3-Setup/Configs/i3status/* ~/.config/i3status/`
 
-### Change Wallpaper
-	-> `apt install nitrogen`
-		-> Add wallpaper folder ~/Pictures/Wallpapers
+### Change wallpaper
+	1 `apt install nitrogen`
+	1.1 Add wallpaper folder to nitrogen ~/Pictures/Wallpapers
 
 ### Display setup
 
+#### Eye comfort mode
+	1 `apt install gammastep`
+	2 `chmod a+x ~/Debian-i3-Setup/Scripts/ToggleEyeComfort.sh`
+	! You can now use the shortcut Win+Period to enable or disable(toggle) eye comfort mode
+	I manually configured the eye comfort level (2500k, default is 6500k). It has to be set in the script to be changed.
 
 ### Audio setup (The most anoying thing in existens)
 	I use 1 monitor with audio via hdmi/dp, my internal laptop speakers, my jack hadphones, and sometimes a bluetooth speaker.
