@@ -54,7 +54,7 @@
 	1 `apt install nitrogen`
 	1.1 Add wallpaper folder to nitrogen ~/Pictures/Wallpapers
 
-### Power-Profiles
+### Power-Profiles (AC -> Performance, No AC -> Balanced)
 	1 `apt install power-profiles-daemon`
 	2 `chmod a+x ~/Debian-i3-Setup/Scripts/SwitchPowerProfiles.sh`
 	3 `sudo ln -s ~/Debian-i3-Setup/Rules/99-power-profile.rules /etc/udev/rules.d/` # If you use another user than nico you need to change the 99-power-profile.rules file to match your user

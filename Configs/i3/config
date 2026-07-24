@@ -211,3 +211,6 @@ bindsym $mod+d exec --no-startup-id rofi -show drun -theme /usr/share/rofi/theme
 
 # eye comfort toggle
 bindsym $mod+period exec ~/Debian-i3-Setup/Scripts/ToggleEyeComfort.sh
+
+# suspend
+bindsym $mod+p exec systemctl suspend
