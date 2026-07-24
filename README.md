@@ -31,9 +31,9 @@
 
 => Everything else is found either in the uploaded config files or will be written down below
 
-## 3. i3 / debian configuration
+## 3. i3 / Debian configuration
 
-### Git setup
+### Git
 	1 `apt install git`
 	2 `git config --global --edit`
 		-> Name: Nico, Email: nico@sinkpad.local
@@ -42,23 +42,34 @@
 	4 In root folder: `git clone <this repo>`
 	5 `ln -s ~/Debian-i3-Setup/Configs/i3 ~/.config/i3`
 
-### i3 Status Bar setup
-	1 `mkdir ~/.config/i3status`
-	2 `ln -s ~/Debian-i3-Setup/Configs/i3status/* ~/.config/i3status/`
+### i3 Status-Bar
+	1 `apt install i3blocks`
+	2 `mkdir ~/.config/i3blocks`
+	3 `ln -s ~/Debian-i3-Setup/Configs/i3blocks/* ~/.config/i3blocks/`
 
-### Change wallpaper
+	NotInUse 1 `mkdir ~/.config/i3status`
+	NotInUSe 2 `ln -s ~/Debian-i3-Setup/Configs/i3status/* ~/.config/i3status/`
+
+### Wallpaper
 	1 `apt install nitrogen`
 	1.1 Add wallpaper folder to nitrogen ~/Pictures/Wallpapers
 
-### Display setup
+### Power-Profiles
+	1 `apt install power-profiles-daemon`
+	2 `chmod a+x ~/Debian-i3-Setup/Scripts/SwitchPowerProfiles.sh`
+	3 `sudo ln -s ~/Debian-i3-Setup/Rules/99-power-profile.rules /etc/udev/rules.d/` # If you use another user than nico you need to change the 99-power-profile.rules file to match your user
+	4 `sudo udevadm control --reload-rules`
+	5 `sudo udevadm trigger`
+	
+### Display
 
-#### Eye comfort mode
+#### Eye-Comfort mode
 	1 `apt install gammastep`
 	2 `chmod a+x ~/Debian-i3-Setup/Scripts/ToggleEyeComfort.sh`
 	! You can now use the shortcut Win+Period to enable or disable(toggle) eye comfort mode
 	I manually configured the eye comfort level (2500k, default is 6500k). It has to be set in the script to be changed.
 
-### Audio setup (The most anoying thing in existens)
+### Audio (The most anoying thing in existens)
 	I use 1 monitor with audio via hdmi/dp, my internal laptop speakers, my jack hadphones, and sometimes a bluetooth speaker.
 
 	#### STEP 1:
